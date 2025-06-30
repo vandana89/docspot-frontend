@@ -1,0 +1,169 @@
+.doctor-dashboard {
+  min-height: 100vh;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  padding: 40px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.doc-header {
+  text-align: center;
+  margin-bottom: 30px;
+  animation: fadeInDown 1s ease;
+}
+
+.doc-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.doc-header p {
+  font-size: 1.1rem;
+  color: #fff9c4;
+}
+
+.appointments-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  animation: fadeInUp 1s ease;
+}
+
+.appointment-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffffff30;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.appointment-card:hover {
+  transform: translateY(-5px);
+}
+
+.status {
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.status.pending {
+  background-color: #fff176;
+  color: #333;
+}
+
+.status.confirmed {
+  background-color: #81c784;
+  color: #fff;
+}
+
+.status.cancelled {
+  background-color: #e57373;
+  color: #fff;
+}
+
+.no-data {
+  font-size: 1.4rem;
+  color: #fff9c4;
+  margin-top: 50px;
+}
+
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.appointment-card {
+  /* existing styles... */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+}
+.doc-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.confirm {
+  background-color: #4caf50;
+  color: white;
+}
+
+.confirm:hover {
+  background-color: #388e3c;
+}
+
+.cancel {
+  background-color: #f44336;
+  color: white;
+}
+
+.cancel:hover {
+  background-color: #d32f2f;
+}
+
+.doctor-dashboard {
+  padding: 20px;
+}
+
+.appt-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #f9f9f9;
+}
+
+.status-actions button {
+  margin-right: 10px;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.status.confirmed {
+  color: green;
+}
+.status.rejected {
+  color: red;
+}
+.status.completed {
+  color: blue;
+}

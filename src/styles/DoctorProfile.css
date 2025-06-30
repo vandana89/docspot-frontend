@@ -1,0 +1,32 @@
+.doctor-profile {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.doctor-profile h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.doctor-profile ul {
+  list-style: none;
+  padding: 0;
+}
+
+.doctor-profile li {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.2rem;
+}

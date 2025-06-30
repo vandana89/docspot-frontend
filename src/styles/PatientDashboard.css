@@ -1,0 +1,157 @@
+.patient-dashboard {
+  min-height: 100vh;
+  background: linear-gradient(to right, #f83600, #f9d423);
+  color: #fff;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.patient-header {
+  text-align: center;
+  margin-bottom: 30px;
+  animation: slideDown 1s ease;
+}
+
+.patient-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.patient-header p {
+  font-size: 1.1rem;
+  color: #fffde7;
+}
+
+.appointments-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  animation: slideUp 1s ease;
+}
+
+.appointment-card {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  border-radius: 16px;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.appointment-card:hover {
+  transform: translateY(-5px);
+}
+
+.status {
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.status.pending {
+  background-color: #ffeb3b;
+  color: #000;
+}
+
+.status.confirmed {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.status.cancelled {
+  background-color: #e53935;
+  color: #fff;
+}
+
+.no-data {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fffde7;
+  margin-top: 50px;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.patient-dashboard {
+  padding: 20px;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  min-height: 100vh;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.patient-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.booking-form {
+  background: #ffffff10;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+}
+
+.booking-form h2 {
+  margin-bottom: 10px;
+}
+
+.booking-form input,
+.booking-form button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  border: none;
+}
+
+.booking-form button {
+  background-color: #03dac6;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 10px;
+  font-weight: bold;
+  color: yellow;
+}
+
+.appointments-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.appointment-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 0 10px #00000040;
+}
+

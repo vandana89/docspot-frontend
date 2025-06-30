@@ -1,0 +1,129 @@
+/* Background container */
+.welcome-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #5f2c82, #49a09d);
+  position: relative;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Decorative blur elements */
+.welcome-blur-bg::before,
+.welcome-blur-bg::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: 0;
+}
+
+.welcome-blur-bg::before {
+  top: -100px;
+  left: -100px;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: pulse 6s infinite ease-in-out;
+}
+
+.welcome-blur-bg::after {
+  bottom: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 192, 203, 0.2);
+  animation: pulse 8s infinite ease-in-out;
+}
+
+/* Card */
+.welcome-card {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 600px;
+  color: #fff;
+}
+
+/* Title */
+.welcome-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  background: linear-gradient(to right, #ffe259, #ffa751);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtitle */
+.welcome-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Buttons */
+.welcome-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-btn {
+  background-color: #ffda77;
+  color: #222;
+}
+
+.login-btn:hover {
+  background-color: #ffe599;
+  transform: scale(1.05);
+}
+
+.register-btn {
+  background-color: #ffffff;
+  color: #f06292;
+}
+
+.register-btn:hover {
+  background-color: #f3e5f5;
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.4;
+  }
+}
+.appointments-btn {
+  background-color: #198754;
+  color: white;
+  margin-top: 10px;
+}
+
+.appointments-btn:hover {
+  background-color: #146c43;
+}

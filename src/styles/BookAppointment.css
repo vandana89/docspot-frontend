@@ -1,0 +1,93 @@
+.book-appointment-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6e00ff, #00c9ff, #ff8a00);
+  background-size: 200% 200%;
+  animation: gradientShift 10s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.appointment-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  padding: 40px 30px;
+  max-width: 500px;
+  width: 100%;
+  color: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.appointment-container h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.appointment-container p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.appointment-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.appointment-container input,
+.appointment-container textarea {
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+}
+
+.appointment-container textarea {
+  resize: none;
+}
+
+.appointment-container button {
+  padding: 14px;
+  font-size: 16px;
+  background-color: #ffd700;
+  color: #1b1464;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.appointment-container button:hover {
+  background-color: #ffcc00;
+}
+.appointment-container select {
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  appearance: none;
+}
